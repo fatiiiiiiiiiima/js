@@ -1,0 +1,30 @@
+<!-- //to study how to create nodes programmitcally , how to create aalemnt-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: grey; color: white;">
+    
+</body>
+<script>
+const div= document.createElement("div"); // an element div is created
+console.log(div);
+
+div.style.backgroundColor = "red";
+div.className="main"//add a class to div
+div.id= Math.round(Math.random()*10+1)
+div.setAttribute("style","title")//now this also assigns things to div
+div.style.backgroundColor='blue'
+div.innerText="chai"// this inserts text, whenever any similar things is assigned dom overwrites prev ones
+const addText =document.createTextNode("chai")//this does same as above and its prefferd
+div.appendChild(addText)
+//now to attach div to dom so that it can be displayed
+document.body.appendChild(div)
+
+
+</script>
+</html>

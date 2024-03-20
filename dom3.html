@@ -1,0 +1,41 @@
+<!-- ///how to edit and remove elements in a dom
+there are two ways but well go with the optimized way -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domchai</title>
+</head>
+<body style="background-color: grey; color: white;">
+    <ul class="language">
+        <li>javascipt</li>
+    </ul>
+    
+</body>
+<script> 
+function optilang(langName) {
+    const li= document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li);
+    
+}
+optilang('golang')
+optilang('python')
+
+// now we have to eidt the element..in that list which can be done by many approaches
+
+const secondLang=document.querySelector('li:nth-child(2)')
+// secondLang.innerHTML='mojo'
+//another method is
+const newli=document.createElement('li')
+newli.textContent='mojo'
+secondLang.replaceWith(newli)
+//can also be edited via approach of secondlang.outerHTML-''
+
+//how to remove an element
+
+const thirdLang=document.querySelector('li:nth-child(3)')
+thirdLang.remove()
+</script>
+</html>

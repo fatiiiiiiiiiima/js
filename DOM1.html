@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: grey; color:white ;">
+  <!--  //this is how to add element in dom, relations in dom -->
+    <div class="parent">
+        <div class="day">monday</div>
+    <div class="day">tuesday</div>
+    <div class="day">wednesday</div>
+    <div class="day">thursday</div>
+    </div>
+    
+
+
+
+    
+</body>
+<script>const parent= document.querySelector('.parent')
+// console.log(parent);
+// console.log(parent.children);
+// console.log(parent.children[1].innerHTML);
+
+// for (let i = 0; i < parent.children.length; i++) {
+//     console.log(parent.children[i].innerHTML);
+    
+// }
+// parent.children[2].style.color='red'
+
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+//we can also move from child to parent
+
+//we can jump from child to parent in two ways one is 
+ const dayOne = document.querySelector('.day')
+//  console.log(dayOne);
+
+ //we can jump also via 
+//  console.log(dayOne.parentElement);
+//  console.log(dayOne.nextSibling);
+
+
+//we can access child nodes via nodes we studied earlier is like tree structure
+// even break in code creates node 
+console.log("nodes: ",parent.childNodes);
+
+
+
+</script>
+</html>

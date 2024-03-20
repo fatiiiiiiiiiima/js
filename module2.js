@@ -7,6 +7,7 @@
 /////Array Methods///////
 // myArr.push(6) //this will add the numbers to the end of the array...push has updated the array
 // console.log(myArr);
+//pop function eliminates value from end of array 
 
 // myArr.unshift(7) //this will add the numbers to the beginning of the array
 // console.log(myArr);

@@ -40,5 +40,17 @@ function area(area1){
     return area 
     console.log(area);
 }
+rl.question('Enter length of one side ', (length)=>{
+    a=Number(length)
+    area(a)
+})
+
+
+
 let area1= prompt("enter area value to be calculated")
 area(area1)
+
+
+storing functions in variables
+
+function area(area1){

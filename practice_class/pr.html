@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="background-color: grey; color: aliceblue;"></body>
+<script > const mydiv= document.createElement('div')
+console.log(mydiv);
+mydiv.className='main'
+mydiv.id=Math.floor(Math.random()*100+1)
+mydiv.setAttribute('title', 'random')
+const addtext=document.createTextNode('this is our dom divS')
+console.log(addtext);
+mydiv.appendChild(addtext)
+document.body.appendChild(mydiv)
+mydiv.style.color='green'
+mydiv.style.fontFamily='arial'
+mydiv.style.fontSize='xlarge'
+
+</script>
+
+</html>

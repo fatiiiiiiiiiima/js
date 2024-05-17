@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<h1>advanced javasript</h1>
+<button id="stop">stop</button>
+<script>
+    // setTimeout(function(){console.log('fatima');},2000)
+
+    const js= function(){
+        console.log('fatima');
+    }
+
+setTimeout(js,2000)
+document.querySelector('h1').innerHTML='best series'
+
+//now i want h1 to be changed not immediatedly but after 2 seconds for that well use method above one
+const newh1= function(){
+    document.querySelector('h1').innerHTML='best series'
+
+}
+setTimeout(newh1,2000)
+
+// what if i want to sto an event from happening?what if i wanna stop h1 from loading in 2 sec eg
+//for that we use clear timeout to prevent a certain settimeout but we cant apply clear timeourt
+//directly, we apply it to an event eg in this case well apply it to a button
+
+const changeMe = setTimeout(newh1,2000)
+document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeMe)
+    console.log('stopped');
+})
+
+
+</script>
+</html>
